@@ -1,4 +1,4 @@
-# "Hello World!" in C
+# Playing With Characters
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -49,20 +49,24 @@ The third line prints the sentence, $sen$.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:49:14.375Z  
+**Submitted:** 2026-10-07T14:53:16.978Z  
 
 ```c
 #include <stdio.h>
-#include <string.h>
 
 int main() {
+    char ch;
     char s[100];
+    char sen[100];
 
-    // Read the full line, including spaces
-    scanf("%[^\n]%*c", s);
+    scanf("%c", &ch);          // read a single character
+    scanf("%s", s);            // read a word (stops at whitespace)
+    scanf("\n");               // consume the leftover newline
+    scanf("%[^\n]%*c", sen);   // read the full sentence, including spaces
 
-    printf("Hello, World!\n");
+    printf("%c\n", ch);
     printf("%s\n", s);
+    printf("%s\n", sen);
 
     return 0;
 }
