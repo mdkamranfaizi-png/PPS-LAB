@@ -1,14 +1,18 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
+    char ch;
     char s[100];
+    char sen[100];
 
-    // Read the full line, including spaces
-    scanf("%[^\n]%*c", s);
+    scanf("%c", &ch);          // read a single character
+    scanf("%s", s);            // read a word (stops at whitespace)
+    scanf("\n");               // consume the leftover newline
+    scanf("%[^\n]%*c", sen);   // read the full sentence, including spaces
 
-    printf("Hello, World!\n");
+    printf("%c\n", ch);
     printf("%s\n", s);
+    printf("%s\n", sen);
 
     return 0;
 }
