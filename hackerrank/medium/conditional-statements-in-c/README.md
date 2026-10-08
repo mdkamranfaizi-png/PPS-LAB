@@ -68,7 +68,7 @@ If $1 \le n \le 9$, then print the lowercase English word corresponding to the n
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:10:32.286Z  
+**Submitted:** 2026-10-07T15:07:52.239Z  
 
 ```c
 #include <stdio.h>
